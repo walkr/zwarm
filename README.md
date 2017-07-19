@@ -18,7 +18,7 @@ end
 
 ```elixir
 # Start 10_000 processes
-ref = Zwarm.create(10_000, fn -> IO.puts "I am process: #{inspect self()}" end)
+ref = Zwarm.create!(10_000, fn -> IO.puts "I am process: #{inspect self()}" end)
 
 # Run function on all processes
 Zwarm.run(ref)
