@@ -7,7 +7,7 @@ defmodule Zwarm.Unit do
         receive do
             :run -> case is_nil(fun) do
                         true -> :ok
-                        false -> :erlang.apply(fun, args)
+                        false ->:erlang.apply(fun, args)
                     end
                     loop(fun, args)
             :destroy -> :ok

@@ -10,4 +10,10 @@ defmodule ZwarmTest do
         Zwarm.run(ref)
         assert_receive :okay, 100
     end
+
+    test "swarm destruction" do
+        {:ok, ref} = Zwarm.create(10, fn -> :ok end)
+        :ok = Zwarm.destroy(ref)
+    end
+
 end

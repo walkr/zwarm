@@ -1,7 +1,7 @@
 Zwarm
 =========
 
-Start, manage and run a collection of Elixir processes with ease.
+Start, manage and run a collection of identical Elixir processes with ease.
 
 ### Installation
 
